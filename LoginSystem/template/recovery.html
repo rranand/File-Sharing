@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recovery Password</title>
+    <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}">
+</head>
+<body>
+{% if not user.is_authenticated %}
+
+    <div align="center" class="recovery_login">
+        <h3 class="log">Let us verify you:</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ recovery.as_p }}
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        {{ message }}
+    </div>
+
+{% else %}
+
+    <h3>You are already logged in, go to <a href="{% url 'user_success_page' %}"><input type="button" value="Your Profile"></a></h3>
+
+{% endif %}
+<hr><hr>
+<h3 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h3>
+<hr><hr>
+</body>
+</html>

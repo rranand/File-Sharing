@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}">
+    <meta charset="utf-8">
+</head>
+<body>
+
+<h1 class="home_title">Welcome to Login Portal</h1><br>
+
+{% if not user.is_authenticated %}
+
+    {% if registered %}
+        <p>Thank you for registering</p>
+    {% else %}
+        <h3 class="home_register">Want to register <a href="{% url 'register' %}"><input type="button" value="click here"></a></h3><br>
+    {% endif %}
+
+        <h3 class="login">Want to login <a href="{% url 'user_login_page' %}"><input type="button" value="click here"></a></h3><br>
+
+    {{ message }}
+
+{% else %}
+
+    <h3>Hey {{ user.get_full_name }}, You are already logged in, go to <a href="{% url 'user_success_page' %}"><input type="button" value="Your Profile"></a></h3>
+
+{% endif %}
+
+{{ hr }}
+<hr><hr>
+<h3 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h3>
+<hr><hr>
+</body>
+</html>
