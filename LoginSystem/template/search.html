@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ searched }} - Search</title>
+    <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="select2-container">
+    <table class="table table-striped">
+        <tr>
+            <th>
+                <p align="center"><img class="img-circle" title="{{ profile.user.get_full_name }}" width="40px" height="40px" src="{{ profile.profile_pic.url }}"> Hi {{ profile.user.username }}</p>
+            </th>
+            <th>
+                <form method="post">
+                    {% csrf_token %}<p align="center">
+                    <label>Search:</label>
+                    {{ search.choose_branch }}
+                    {{ search.search_profile }}
+                    <button type="submit" hidden>Search</button></p>
+                </form>
+            </th>
+            <form method="post">
+                {% csrf_token %}
+            <th><p align="center">
+                <a href="{% url 'user_success_page' %}"><input class="btn btn-primary" type="button" value="Home"></a>
+                <button class="btn btn-primary" id="more_info" name="more_info" type="submit" value="{{ profile.user.id }}">My Profile</button>
+                <a href="{% url 'user_logout_page' %}"><input class="btn btn-primary" type="button" value="Logout"></a>
+                <a href="{% url 'user_success_delete' %}"><input class="btn btn-primary" type="button" value="Delete"></a></p>
+            </th>
+            </form>
+        </tr>
+    </table>
+    <p><br></p>
+    {% if result %}
+        <table class="table table-striped">
+        <tr align="center">
+            <th><p align="center"> Profile Image</th>
+            <th><p align="center">Basic Details</p></th>
+        </tr>
+        {% for i in result %}
+                <tr align="center">
+                    <td>
+                        <p align="center"> <img class="img-rounded" src="{{ i.profile_pic.url }}" width="350" height="250" border="2px"></p>
+                    </td>
+                    <td><p align="center">
+                        <table class="table table-striped" border="2px">
+                            <tr align="center">
+                                <td>
+                                    <p align="center">{{ i.user.get_full_name }}</p>
+                                    <p align="center">{{ i.user.email }}</p>
+                                </td>
+                                <td><p align="center">
+                                    <form method="post">
+                                        {% csrf_token %}
+                                        <p align="center"><button class="btn btn-dark" name="receiver_profile" id="receiver_profile" value="{{ i.user.id }}" type="submit">Add Friend</button></p>
+                                    </form>
+                                </td>
+                                </p>
+                            </tr>
+                        </table></p>
+                    </td>
+                </tr>
+        {% endfor %}
+        </table>
+        {% else %}
+        {% if search_message %}
+            <div class="alert alert-warning">
+            <p align="center"><strong>{{ search_message }}</strong></p>
+            </div>
+        {% endif %}
+    {% endif %}
+<p><br></p>
+<hr><hr>
+<h4 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h4>
+<hr><hr>
+</div>
+</body>
+</html>

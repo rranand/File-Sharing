@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+<div class="select2-container">
+{% if user.is_authenticated %}
+    {% if profile.verified %}
+        <table class="table table-striped">
+        <tr align="center">
+            <th>
+                <p align="center"><img class="img-circle" title="{{ profile.user.get_full_name }}" width="40px" height="40px" src="{{ profile.profile_pic.url }}"> Hi {{ profile.user.username }}</p>
+                {% if verification %}
+                    <div class="alert alert-success alert-dismissible">
+                    <p align="center"><b>{{ verification }}</b></p>
+                    </div>
+                {% endif %}
+            </th>
+            <th>
+                <form method="post">
+                    {% csrf_token %}<p align="center">
+                    <label>Search:</label>
+                    {{ search.choose_branch }}
+                    {{ search.search_profile }}
+                    <button type="submit" hidden>Search</button></p>
+                </form>
+            </th>
+            <th>
+                <form method="post">
+                    {% csrf_token %}<p align="center">
+                    <button class="btn btn-primary" id="more_info" name="more_info" type="submit" value="{{ profile.user.id }}">My Profile</button>
+                    <button class="btn btn-primary" id="change_password" name="change_password" type="submit" value="{{ profile.user.id }}">Change Password</button>
+                    <a href="{% url 'user_logout_page' %}"><input class="btn btn-primary" type="button" value="Logout"></a>
+                    <a href="{% url 'user_success_delete' %}"><input class="btn btn-primary" type="button" value="Delete"></a>
+                </p></form>
+            </th>
+        </tr>
+        </table>
+        <p><br></p>
+        <table class="table table-striped">
+        <tr align="center">
+            <td>
+                <h4><b>Received Files:</b></h4>
+            </td>
+            <td>
+                {% if files.exists %}
+                    <p align="center"><a href="{% url 'user_request_download' %}"><button class="btn btn-success" type="button">Download</button></a> <br>{{ download_message }}</p>
+                    <p align="center"><a href="{% url 'user_delete_download' %}"><button class="btn btn-danger" type="button">Delete Files</button></a> <br>{{ download_message }}</p>
+                {% else %}
+                    <p align="center">No Files Received</p>
+                {% endif %}
+            </td>
+        </tr>
+
+        <tr align="center">
+            <td>
+                <h4 align="center"><b>Request List:</b></h4>
+            </td>
+            <td>
+                {% if friends_request.exists %}
+                    <table class="table table-striped">
+                    {% for friend in friends_request %}
+                            <tr align="center">
+                                <td>
+                                    <p align="center"><img class="img-rounded" width="100px" height="100px" src="{{ friend.profile.profile_pic.url }}"></p>
+                                    <p align="center"><b>{{ friend.profile.user.get_full_name }}</b></p>
+                                </td>
+                                <td>
+                                    <form method="post">
+                                        {% csrf_token %}<p align="center">
+                                        <button class="btn btn-success" id="to_be_accept" name="to_be_accept" type="submit" value="{{ friend.profile.user.username }}">Confirm Request</button>
+                                        <button class="btn btn-danger" id="not_to_be_accept" name="not_to_be_accept" type="submit" value="{{ friend.profile.user.username }}">Delete Request</button>
+                                    </p></form>
+                                </td>
+                            </tr>
+                    {% endfor %}
+                    </table>
+                {% else %}
+                    <p>No New Friend Request Found</p>
+                {% endif %}
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <h4 align="center"><b>Your Friends:</b></h4>
+            </td>
+            <td>
+                {% if friends_list.exists %}
+                    <table class="table table-striped">
+                    {% for friend in friends_list %}
+                            {% if friend.friend != profile %}
+                                    <tr align="center">
+                                        <td>
+                                            <p align="center"><img class="img-rounded" width="100px" height="100px" src="{{ friend.friend.profile_pic.url }}"></p>
+                                            <p align="center">{{ friend.friend.user.get_full_name }}</p>
+                                        </td>
+                                        <form method="post" enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                            <td><p align="center">
+                                                <button class="btn btn-secondary" type="submit" id="more_info" name="more_info" value="{{ friend.friend.user.id }}">Show More Info</button><br>
+                                                <button class="btn btn-secondary" type="submit" id="un_friend" name="un_friend" value="{{ friend.friend.user.id }}">Unfriend</button></p>
+                                            </td>
+                                            <td><p align="center">
+                                                <label for="upload_files">Choose Files: </label>
+                                                <input id="upload_files" name="upload_files" type="file" multiple></p><br>
+                                                <p align="center">
+                                                    <button class="btn btn-success" id="user_id" name="user_id" value="{{ friend.friend.user.id }}" type="submit">Send</button>
+                                                    <button class="btn btn-danger" type="reset">Reset Selection</button>
+                                                </p>
+                                            </td>
+                                        </form>
+                                    </tr>
+                            {% else %}
+                                    <tr align="center">
+                                        <td>
+                                            <p align="center"><img class="img-rounded" width="100px" height="100px" src="{{ friend.profile.profile_pic.url }}"></p>
+                                            <p align="center">{{ friend.profile.user.get_full_name }}</p>
+                                        </td>
+                                        <form method="post" enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                            <td align="center"><p align="center">
+                                                <button class="btn btn-secondary" type="submit" id="more_info" name="more_info" value="{{ friend.profile.user.id }}">Show More Info</button><br>
+                                                <button class="btn btn-secondary" type="submit" id="un_friend" name="un_friend" value="{{ friend.profile.user.id }}">Unfriend</button></p>
+                                            </td>
+                                        <td><p align="center">
+                                                <label for="upload_files">Choose Files: </label>
+                                                <input id="upload_files" name="upload_files" type="file" multiple></p><br>
+                                                <p align="center">
+                                                    <button class="btn btn-success" id="user_id" name="user_id" value="{{ friend.profile.user.id }}" type="submit">Send</button>
+                                                    <button class="btn btn-danger" type="reset">Reset Selection</button>
+                                                </p>
+                                            </form>
+                                        </td>
+                                    </tr>
+                            {% endif %}
+                    {% endfor %}
+                    </table>
+                {% else %}
+                    <p>Make Some Friend Buddy</p>
+                {% endif %}
+            </td>
+        </tr>
+        </table>
+
+    {% else %}<br>
+        <p align="center"><img class="img-circle" title="{{ profile.user.get_full_name }}" width="100px" height="100px" src="{{ profile.profile_pic.url }}"><br><b>{{ profile.user.username }}</b></p>
+        <h3 align="center">Activate your account</h3><p></p><br>
+        <form method="post">
+            {% csrf_token %}
+            <p align="center"><label class="inline_label">{{ otp_verify.key.label }}</label>{{ otp_verify.key }}</p>
+            <p align="center"><button class="btn btn-success" type="submit">Verify</button>
+            <a href="{% url 'user_logout_page' %}"><input class="btn btn-info" type="button" value="Logout"></a></p>
+        </form>
+        {% if message or otp_verify.errors %}
+            <div class="alert alert-danger">
+                <p align="center"><strong> {{ otp_verify.key.errors }} </strong></p>
+                <p align="center"><strong> {{ message }} </strong></p>
+            </div>
+        {% endif %}
+    {% endif %}
+
+{% else %}
+
+    <h3>You are not logged in.</h3>
+    <h3>Click here to login <a href="{% url 'user_login_page' %}"><button type="button">Login Page</button></a></h3>
+
+{% endif %}
+<p><br></p>
+<hr><hr>
+<h4 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h4>
+<hr><hr>
+</div>
+</body>
+</html>

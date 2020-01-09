@@ -7,7 +7,7 @@ def generate_password():
     password = ''
     for i in range(10):
         password += get[random.randint(0, len(get)-1)]
-    return password
+    return str(password)
 
 
 def sendmail(email, otp):

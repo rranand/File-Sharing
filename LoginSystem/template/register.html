@@ -3,32 +3,51 @@
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}">
     <meta charset="utf-8">
 </head>
 <body>
 
-{% if not user.is_authenticated %}
 
-<h1 class="register_title">Registeration Form</h1><br>
+<h1 align="center" class="register_title">Registeration Form</h1><br>
 
-<div class="register_form">
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form1.as_p }}
-    {{ form2.as_p }}
-    <button type="submit">Register</button>
-    <button type="reset" >Reset</button>
-</form>
+{% if form1.errors or form2.errors or error %}
+<div class="alert alert-danger">
+    <p align="center"><strong> {{ form1.errors }} </strong></p>
+    <p align="center"><strong> {{ form2.errors }} </strong></p>
+    <p align="center"><strong> {{ error }} </strong></p>
 </div>
-
-{% else %}
-
-    <h3>Hey {{ user.get_full_name }}, You are already logged in, go to <a href="{% url 'user_success_page' %}"><input type="button" value="Your Profile"></a></h3>
-
 {% endif %}
+
+<div class="select2-container">
+<table>
+    <form class="form-horizontal" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <tr>
+        {% for form in form1 %}
+            <p align="center">
+                <label class="inline_label">{{ form.label }} </label>
+                {{ form }}
+            </p>
+        {% endfor %}
+        {% for form in form2 %}
+            <p align="center">
+                <label>{{ form.label }} </label>
+                {{ form }}
+            </p>
+        {% endfor %}
+        </tr>
+        <p align="center"><button class="btn btn-default" type="submit">Register</button>
+            <button class="btn btn-default" type="reset" >Reset</button></p>
+    </form>
+</table>
+</div>
+<p><br></p>
 <hr><hr>
-<h3 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h3>
+<h4 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h4>
 <hr><hr>
 </body>
 </html>>

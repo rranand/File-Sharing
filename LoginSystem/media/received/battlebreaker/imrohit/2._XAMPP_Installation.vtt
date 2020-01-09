@@ -1,0 +1,163 @@
+WEBVTT
+
+00:00.240 --> 00:05.010
+Welcome back this lesson we're going to be learning how to install some of the programs required to
+
+00:05.010 --> 00:10.770
+use my school as well as some we're just going to be using in this lesson the first two we're going
+
+00:10.770 --> 00:15.060
+to install our my ask itself so be my admin.
+
+00:15.420 --> 00:20.350
+Fortunately we can get both of these in a single package called Zant.
+
+00:20.550 --> 00:25.440
+If you go to the link provided you will come to this page.
+
+00:25.480 --> 00:27.250
+We could sign and was Facebook or Google.
+
+00:27.260 --> 00:32.240
+But Azziz is issues the alternative download which will take you to this page.
+
+00:32.420 --> 00:38.330
+You'll quickly have a pop up which will ask you to sign up now click say we could watch their installation
+
+00:38.330 --> 00:40.170
+video but I'll explain everything.
+
+00:41.620 --> 00:47.320
+Now as you say this is downloading we're going to cut a little bit out here to save some time.
+
+00:47.500 --> 00:52.190
+Now that it's all downloaded we just have to open a file and it'll ask us to run it.
+
+00:55.550 --> 01:01.850
+You may get a little pop up that warns about possible slowing down of the installation due to an anti-virus
+
+01:02.210 --> 01:03.890
+but it doesn't really have much of an effect.
+
+01:03.890 --> 01:08.880
+So just click yes then you will click next.
+
+01:09.470 --> 01:13.430
+And in here we don't really need most of these things we're just looking for my ask.
+
+01:13.460 --> 01:22.590
+Well so we're going to check all these Remember we also want to get BHB madman.
+
+01:22.640 --> 01:27.890
+We're going to click next and you can select the installation folder by default.
+
+01:27.900 --> 01:34.640
+It's just cézanne don't have to click to learn anything more so what's.
+
+01:35.000 --> 01:38.540
+Now you're ready to install packaging.
+
+01:38.930 --> 01:41.870
+And once again we're going to cut to the end the.
+
+01:43.250 --> 01:44.370
+One says loaded.
+
+01:44.390 --> 01:46.310
+It'll take you to the finished page.
+
+01:46.310 --> 01:52.540
+And yes we're going to go ahead and launch the control panel that will ask us to choose our language
+
+01:54.770 --> 01:58.000
+and then you're going to see this easy to navigate panel.
+
+01:58.040 --> 02:02.090
+Let's go ahead and start apache at my school.
+
+02:02.300 --> 02:02.840
+That's it.
+
+02:02.840 --> 02:06.740
+We actually have the prep work for a database already.
+
+02:06.740 --> 02:13.580
+And not only that because we install BHP might mean we have a way to see it to PH.
+
+02:13.600 --> 02:22.340
+My opinion simply go back to your browser and type localhost BHP my admin that'll bring you up to an
+
+02:22.340 --> 02:27.650
+interface where you can see that we now have Manusky Rayle installed and some test databases that come
+
+02:27.650 --> 02:29.690
+to on the system.
+
+02:29.690 --> 02:31.970
+We're not going to go into actually using this just yet.
+
+02:32.090 --> 02:34.170
+This is just the way to go.
+
+02:34.190 --> 02:36.200
+We'll move on to the next thing.
+
+02:36.740 --> 02:41.390
+If you're not using Windows then the installation instructions provided are ready.
+
+02:41.470 --> 02:48.650
+They don't tell you all you need to know for example if you're on a Mac you can use the download location
+
+02:48.650 --> 02:52.490
+I provided and pick one after downloading.
+
+02:52.490 --> 02:56.470
+Just open the downloadable should be nice the same as I listed here.
+
+02:56.510 --> 02:59.680
+Drag and drop the zent browser into your applications folder.
+
+02:59.680 --> 03:05.960
+That's a complete installation and then to start Csound simply open the Zant control by going to slash
+
+03:05.960 --> 03:12.700
+applications slash sale sign up in your control Haunter and from there you can start apache minuscule
+
+03:13.860 --> 03:14.630
+paralytics.
+
+03:14.640 --> 03:18.980
+Then you will need to use this location for download after downloading.
+
+03:18.990 --> 03:23.040
+You're going to need to change your permission love the file so that it can be executed.
+
+03:23.110 --> 03:29.490
+I provided the command to do that here and figure 2 way after that run the installer.
+
+03:29.490 --> 03:32.400
+The command for that is in 3A.
+
+03:32.400 --> 03:34.860
+Once it's running you can just follow the process to install.
+
+03:34.860 --> 03:36.760
+It should be just like the Windows version.
+
+03:37.910 --> 03:39.660
+After installation to start zone.
+
+03:39.800 --> 03:44.660
+Enter sudo slash slash slash way up.
+
+03:44.960 --> 03:49.120
+Start pedalo to everything should get you back where you are.
+
+03:49.160 --> 03:51.940
+Video speaking of videos.
+
+03:51.950 --> 03:53.260
+That's it for this one.
+
+03:53.270 --> 03:57.110
+We'll continue our installation what they ask Cuil workbench Semitics Vidia.

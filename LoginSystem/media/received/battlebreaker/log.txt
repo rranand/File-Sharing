@@ -1,0 +1,20 @@
+Tue Dec 31 20:58:35 2019
+Filename: received/battlebreaker/ssraut/1._Data_Types_in_MySQL_-_Part_1.mp4   <---->   Size: 8543861   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/1._Data_Types_in_MySQL_-_Part_1.vtt   <---->   Size: 5130   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/2._Data_Types_in_MySQL_-_Part_2.vtt   <---->   Size: 3911   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/2._Data_Types_in_MySQL_-_Part_2.mp4   <---->   Size: 6207353   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/3._Creating_Database__Table_through_PHPMyAdmin.mp4   <---->   Size: 13827011   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/3._Creating_Database__Table_through_PHPMyAdmin.vtt   <---->   Size: 7260   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/4._Creating_Database__Table_through_MySQL_Workbench.mp4   <---->   Size: 13549001   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/4._Creating_Database__Table_through_MySQL_Workbench.vtt   <---->   Size: 4956   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/5._Understanding_Primary_Key_Database_Users__their_Permissions.mp4   <---->   Size: 8432704   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/5._Understanding_Primary_Key_Database_Users__their_Permissions.vtt   <---->   Size: 6815   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/6._Importing__Exporting_Databases.mp4   <---->   Size: 9767770   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/6._Importing__Exporting_Databases.vtt   <---->   Size: 4260   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/7._Introduction_to_MySQL_Queries_and_SELECT_Clause.mp4   <---->   Size: 20589933   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/7._Introduction_to_MySQL_Queries_and_SELECT_Clause.vtt   <---->   Size: 7461   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/8._Practical_session_on_Insert__Update__Delete.vtt   <---->   Size: 4617   <---->   Sender: ssraut
+Filename: received/battlebreaker/ssraut/8._Practical_session_on_Insert__Update__Delete.mp4   <---->   Size: 12665094   <---->   Sender: ssraut
+
+
+

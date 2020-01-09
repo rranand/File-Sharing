@@ -4,32 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}">
 </head>
 <body>
 
-{% if not user.is_authenticated %}
 
-    <div align="center" class="home_login">
-        <h3 class="log">Login:</h3>
-        <form method="post">
+    <div align="center" class="select2-container--classic">
+        <h3 class="log">Login</h3>
+        <form method="post" class="form-horizontal">
             {% csrf_token %}
             {{ login_form.as_p }}
-            <input type="submit" value="Login">
-            <input type="reset" value="Reset">
-            <a href="{% url 'user_change_password' %}"><button type="button">Forget password</button></a>
+            <input class="btn btn-default" type="submit" value="Login">
+            <input class="btn btn-default" type="reset" value="Reset">
+            <a href="{% url 'user_change_password' %}"><button class="btn btn-default" type="button">Forget password</button></a>
         </form>
 
-        {{ error }}
+        {% if error %}
+            <br><div class="alert alert-danger">
+                <p align="center"><strong> {{ error }} </strong></p>
+            </div>
+        {% endif %}
     </div>
-
-{% else %}
-
-    <h3>You are already logged in, go to <a href="{% url 'user_success_page' %}"><input type="button" value="Your Profile"></a></h3>
-
-{% endif %}
+<p><br></p>
 <hr><hr>
-<h3 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h3>
+<h4 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h4>
 <hr><hr>
 </body>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+    {% if admin %}
+        <title> My Profile </title>
+    {% else %}
+        <title> {{ profile.user.get_full_name }}'s Profile </title>
+    {% endif %}
+    <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<div class="select2-container">
+
+    <table class="table table-striped">
+        <tr align="center">
+            <th>
+                <p align="center"><img class="img-circle" title="{{ logged_user.user.get_full_name }}" width="40px" height="40px" src="{{ logged_user.profile_pic.url }}"> Hi {{ logged_user.user.username }}</p>
+            </th>
+            <th>
+                <form method="post">
+                    {% csrf_token %}<p align="center">
+                    <label>Search:</label>
+                    {{ search.choose_branch }}
+                    {{ search.search_profile }}
+                    <button type="submit" hidden>Search</button></p>
+                </form>
+            </th>
+            <form method="post">
+                {% csrf_token %}
+            <th><p align="center">
+                <a href="{% url 'user_success_page' %}"><input type="button" value="Home"></a>
+                {% if admin and not edit_mode %}
+                    <button id="edit_info" name="edit_info" type="submit">Edit</button>
+                {% endif %}
+                <button id="change_password" name="change_password" type="submit" value="{{ logged_user.user.id }}">Change Password</button>
+                <a href="{% url 'user_logout_page' %}"><input type="button" value="Logout"></a>
+                <a href="{% url 'user_success_delete' %}"><input type="button" value="Delete"></a></p>
+            </th>
+            </form>
+        </tr>
+    </table>
+    <p><br></p>
+
+
+
+        {% if edit_mode %}
+            <p align="center">
+            {{ message }}
+            <form class="form-horizontal" method="post" enctype="multipart/form-data">
+                {% csrf_token %}<p align="center">
+                {{ basic.as_p }}
+                {{ more_detail.as_p }}</p>
+                <button class="btn btn-success" name="edit_success" name="edit_success" type="submit">Update</button>
+            </form></p>
+
+        {% elif admin %}
+            <p align="center"><img class="img-circle" title="{{ logged_user.user.get_full_name }}" width="270px" height="270px" src="{{ logged_user.profile_pic.url }}"><p></p></p>
+            <p align="center"><b>Name:</b> {{ logged_user.user.get_full_name }}</p>
+            <p align="center"><b>Email:</b> {{ logged_user.user.email }}</p>
+            <p align="center"><b>Mobile No.:</b> {{ logged_user.mobile }}</p>
+            <p align="center"><b>Branch:</b> {{ logged_user.get_branch_display }}</p>
+            <p align="center"><b>Description:</b> {{ logged_user.description }}</p>
+            <p align="center"><b>Address:</b> {{ logged_user.city }}, {{ logged_user.state }}, {{ logged_user.country }}</p>
+            <p align="center"><b>Date joined:</b> {{ logged_user.user.date_joined }}</p>
+            <p align="center"><b>Last Login:</b> {{ logged_user.user.last_login }}</p>
+        {% else %}
+            <p align="center"><img class="img-circle" title="{{ profile.user.get_full_name }}" width="270px" height="270px" src="{{ profile.profile_pic.url }}"><p></p></p>
+            <p align="center"><b>Name:</b> {{ profile.user.get_full_name }}</p>
+            <p align="center"><b>Email:</b> {{ profile.user.email }}</p>
+            <p align="center"><b>Mobile No.:</b> {{ profile.mobile }}</p>
+            <p align="center"><b>Branch:</b> {{ profile.get_branch_display }}</p>
+            <p align="center"><b>Description:</b> {{ profile.description }}</p>
+            <p align="center"><b>Address:</b> {{ profile.city }}, {{ profile.state }}, {{ profile.country }}</p>
+            <p align="center"><b>Date joined:</b> {{ profile.user.date_joined }}</p>
+            <p align="center"><b>Last Login:</b> {{ profile.user.last_login }}</p>
+        {% endif %}
+
+
+
+<p><br></p>
+<hr><hr>
+<h4 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h4>
+<hr><hr>
+</div>
+</body>
+</html>

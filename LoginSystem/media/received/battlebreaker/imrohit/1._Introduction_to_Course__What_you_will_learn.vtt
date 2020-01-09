@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.780 --> 00:05.880
+Hello and welcome to learn my ask you owl with Justin Posey brought to you by KRAD of online school
+
+00:05.880 --> 00:09.440
+dot com a little bit about me.
+
+00:09.670 --> 00:15.490
+I have known years and web development and my specialization has been in my school LMP HP.
+
+00:15.890 --> 00:21.300
+There are other courses available online school dot com and it's a Tauriel.
+
+00:21.320 --> 00:27.850
+We're going to go over a basic introduction of mine as to how to install Maia's Cuil server DHV mad
+
+00:27.860 --> 00:34.700
+man and Mariscal where change we're going to teach you how to create databases tables how to import
+
+00:34.720 --> 00:42.020
+and export information from those tables how to input retrieve and manipulate data with ASCII well and
+
+00:42.020 --> 00:46.780
+some more advanced as you take names for those who want to get the most out of the system.
+
+00:46.790 --> 00:48.670
+Well let's get started then.
+
+00:48.680 --> 00:53.100
+First a quick aside about pronunciation as you can tell I've been calling it my.
+
+00:53.110 --> 00:55.970
+Q Well that is the correct pronunciation.
+
+00:56.030 --> 00:58.920
+However it is also commonly called sequel.
+
+00:58.940 --> 00:59.840
+We hear it called that.
+
+00:59.840 --> 01:00.780
+Don't be confused.
+
+01:00.800 --> 01:02.610
+It's the same thing.
+
+01:02.630 --> 01:04.070
+So what is my ask.
+
+01:04.280 --> 01:09.960
+Well my ask you will is a relational database management system for RDBMS.
+
+01:10.280 --> 01:11.720
+According to a poll by.
+
+01:11.960 --> 01:17.420
+Around 90 percent of the 300 companies polled actively use the systems in their businesses.
+
+01:17.420 --> 01:24.180
+So as you can see the RDBMS does play an important role for almost every company Maskey well is one
+
+01:24.180 --> 01:30.300
+of the most widely used of the RDBMS in the world according to the same poll Forty one percent of the
+
+01:30.300 --> 01:34.670
+companies were using bascule putting it in the top three along with Oracle.
+
+01:34.690 --> 01:38.700
+The Microsoft rescue Sarber Sadow that we know it's important.
+
+01:38.700 --> 01:43.130
+The next question is just what is a relational database management system.
+
+01:43.650 --> 01:45.610
+Let's break it up into two parts.
+
+01:45.660 --> 01:51.060
+First the database management system is simply a system designed to allow you to store and retrieve
+
+01:51.060 --> 01:53.360
+information from a database.
+
+01:53.490 --> 01:59.100
+For example let's say you wanted to store a list of reservations a database management system would
+
+01:59.100 --> 02:04.320
+allow you to put that information into a database and it would store for you and keep it available so
+
+02:04.320 --> 02:07.270
+that you could retrieve that data at any time.
+
+02:07.290 --> 02:14.100
+However you can either pull out what you put in now relational database management system does the same
+
+02:14.100 --> 02:19.920
+thing but it uses a particular structure for storing the data called the relational model.
+
+02:19.920 --> 02:25.160
+This model allows different pieces of information to connect to each other in a meaningful way.
+
+02:25.200 --> 02:29.820
+For example if you look at the image on the right you can see that there are two different sections
+
+02:29.820 --> 02:30.850
+of information.
+
+02:31.140 --> 02:37.240
+But despite these being stored separately you can per day use a combined section of the information.
+
+02:37.350 --> 02:41.190
+This is possible because both sets of information have something in common.
+
+02:41.280 --> 02:47.910
+The activity code that commonality is what relates to them and storing the information with those commonalities
+
+02:48.000 --> 02:52.000
+is what makes the database relational.
+
+02:52.030 --> 02:57.970
+So how does Mayank Who else can retrieve data or uses something called the client server mom.
+
+02:58.070 --> 03:04.400
+In this model the database typically resides on a server that is accessed via client through the Internet.
+
+03:04.400 --> 03:11.360
+A client can be an interface for direct manipulations such as ph being mad madman or it can even be
+
+03:11.450 --> 03:17.170
+a web site application or program which operates behind the scenes.
+
+03:17.230 --> 03:22.930
+Now that we know what a client is let's talk about how a clock communicates with the server to do this.
+
+03:22.990 --> 03:28.450
+Is this something taught at Escudo where structured query language this language can be used to define
+
+03:28.540 --> 03:35.140
+update inquiry the database query is just a time from the set of instructions seems like any language
+
+03:35.270 --> 03:41.500
+bascule has a specific set of syntaxes that once sent from the client to the server can then be interpreted
+
+03:41.500 --> 03:46.830
+by Maia's well so that it can take the appropriate action on the database.
+
+03:46.860 --> 03:49.950
+A quick example of this syntax would be something like.
+
+03:50.170 --> 03:53.600
+Select name from person where age equals 21.
+
+03:54.010 --> 04:00.940
+We'll get into the actual syntax later in the course but for now that's how it looks and the best part
+
+04:00.940 --> 04:05.620
+is that Cuil is used by virtually all relational database systems.
+
+04:05.890 --> 04:10.980
+So you can use the same set of instructions no matter what your environment is.
+
+04:11.140 --> 04:13.950
+That's it for the introduction and the next video.
+
+04:13.990 --> 04:17.430
+We will go over the different types of data that can be stored within Myskina.

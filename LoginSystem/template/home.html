@@ -3,34 +3,39 @@
 <html>
 <head>
     <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}">
     <meta charset="utf-8">
 </head>
 <body>
 
-<h1 class="home_title">Welcome to Login Portal</h1><br>
+<div class="select2-container--classic">
 
-{% if not user.is_authenticated %}
-
-    {% if registered %}
-        <p>Thank you for registering</p>
-    {% else %}
-        <h3 class="home_register">Want to register <a href="{% url 'register' %}"><input type="button" value="click here"></a></h3><br>
+    <h1 align="center" class="home_title">Welcome to Login Portal</h1><br>
+    {% if message %}
+        <div class="alert alert-success">
+          <p align="center"><strong> {{ message }} </strong></p>
+        </div>
     {% endif %}
+    {% if registered %}
+        <div class="alert alert-success">
+          <p align="center"><strong>Thank you for registering</strong></p>
+        </div><br>
+    {% else %}
+        <p align="center"><a href="{% url 'register' %}"><button type="button" class="btn btn-default">Register</button></a></p>
+    {% endif %}
+        <p align="center"><a href="{% url 'user_login_page' %}"><button type="button" class="btn btn-default">Login</button></a></p>
 
-        <h3 class="login">Want to login <a href="{% url 'user_login_page' %}"><input type="button" value="click here"></a></h3><br>
+</div>
 
-    {{ message }}
-
-{% else %}
-
-    <h3>Hey {{ user.get_full_name }}, You are already logged in, go to <a href="{% url 'user_success_page' %}"><input type="button" value="Your Profile"></a></h3>
-
-{% endif %}
-
+<div class="select2-container">
 {{ hr }}
+<p><br></p>
 <hr><hr>
-<h3 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h3>
+<h4 align="center"><footer>This project is created by Rohit Anand<br>To visit my github profile <a href="https://github.com/rranand" target="_blank">click here </a></footer></h4>
 <hr><hr>
+</div>
 </body>
 </html>

@@ -2,29 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d373d5a-6490-48fa-b7f7-5de044282ff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LoginPortal/file_handling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0002_auto_20191228_1746.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0003_auto_20191228_1806.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0004_auto_20191228_1901.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0005_auto_20191228_1910.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0006_auto_20191228_1919.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0007_auto_20191228_1922.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_img/rabiswas/IMG_20191214_085242.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_img/ssraut/alexander-andrews-fsH1KjbdjE8-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0002_auto_20200108_1048.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0003_auto_20200108_1419.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_img/battlebreaker/IMG_20191214_085242.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_img/rrkumari/20191227_125015_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/received/battlebreaker/imrohit/1._Introduction_to_Course__What_you_will_learn.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/received/battlebreaker/imrohit/1._Introduction_to_Course__What_you_will_learn.vtt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/received/battlebreaker/imrohit/2._XAMPP_Installation.vtt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/received/battlebreaker/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/received/imrohit/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/received/rabiswas/battlebreaker/1._Introduction_to_Course__What_you_will_learn.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/received/ssraut/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/received/vspecky/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/profiles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/file_handling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LoginPortal/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/mail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0002_auto_20191228_1746.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0003_auto_20191228_1806.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0004_auto_20191228_1901.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0005_auto_20191228_1910.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0006_auto_20191228_1919.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0007_auto_20191228_1922.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0008_auto_20191228_2114.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0009_auto_20191228_2120.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LoginPortal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPortal/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LoginPortal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LoginPortal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_img/IMG_20191122_192921.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_img/Screenshot_from_2019-12-01_06-08-49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/received/43-430987_cute-profile-images-pic-for-whatsapp-for-boys.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/received/43-430987_cute-profile-images-pic-for-whatsapp-for-boys_dtCLfYk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/received/43-430987_cute-profile-images-pic-for-whatsapp-for-boys_tiFTXoe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/received/800705-free-download-dangerous-hd-wallpaper-smoke-skull-1920x1200-ipad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/received/photo-1472214103451-9374bd1c798e.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_img/800705-free-download-dangerous-hd-wallpaper-smoke-skull-1920x1200-ipad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_img/IMG_20191106_155743.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_img/IMG_20191214_085242.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_img/alexander-andrews-fsH1KjbdjE8-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/recovery.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/recovery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +66,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1Umu3zoxJfawgsgqMR9pTLEDdX2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -133,7 +164,26 @@
       <workItem from="1577278202392" duration="1812000" />
       <workItem from="1577398681324" duration="74000" />
       <workItem from="1577476998364" duration="7042000" />
-      <workItem from="1577570907230" duration="16208000" />
+      <workItem from="1577570907230" duration="17305000" />
+      <workItem from="1577621080867" duration="11163000" />
+      <workItem from="1577643463815" duration="7178000" />
+      <workItem from="1577735864256" duration="11636000" />
+      <workItem from="1577825086648" duration="4832000" />
+      <workItem from="1577883914293" duration="12783000" />
+      <workItem from="1577906040756" duration="16356000" />
+      <workItem from="1577958634242" duration="432000" />
+      <workItem from="1578015572738" duration="6580000" />
+      <workItem from="1578077417675" duration="16329000" />
+      <workItem from="1578163648681" duration="5619000" />
+      <workItem from="1578387149521" duration="2570000" />
+      <workItem from="1578418736906" duration="1628000" />
+      <workItem from="1578422064294" duration="2467000" />
+      <workItem from="1578479328141" duration="3396000" />
+      <workItem from="1578491392187" duration="7172000" />
+      <workItem from="1578538156368" duration="643000" />
+      <workItem from="1578563488834" duration="803000" />
+      <workItem from="1578573126646" duration="7769000" />
+      <workItem from="1578594026226" duration="7320000" />
     </task>
     <servers />
   </component>
@@ -164,6 +214,14 @@
       <screen x="61" y="27" width="1859" height="1053" />
     </state>
     <state x="628" y="192" key="SettingsEditor/61.27.1859.1053@61.27.1859.1053" timestamp="1577562760579" />
+    <state x="525" y="291" width="920" height="522" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1577904336931">
+      <screen x="61" y="27" width="1859" height="1053" />
+    </state>
+    <state x="525" y="291" width="920" height="522" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/61.27.1859.1053@61.27.1859.1053" timestamp="1577904336931" />
+    <state x="557" y="105" width="866" height="894" key="find.popup" timestamp="1578087884997">
+      <screen x="61" y="27" width="1859" height="1053" />
+    </state>
+    <state x="557" y="105" width="866" height="894" key="find.popup/61.27.1859.1053@61.27.1859.1053" timestamp="1578087884997" />
     <state x="653" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576960236094">
       <screen x="61" y="27" width="1859" height="1053" />
     </state>
