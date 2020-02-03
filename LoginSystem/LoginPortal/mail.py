@@ -14,7 +14,7 @@ def sendmail(email, otp):
     connect = SMTP('smtp.gmail.com', 587)
     connect.ehlo()
     connect.starttls()
-    connect.login(str('rrohitanand3336@gmail.com'), str('qbkpstvmwfgswlec'))
+    connect.login(str('rrohitanand3336@gmail.com'), str('**********'))
     content = 'Subject: ' + str('OTP for login portal') + '\n\n' + str('Your six digit OTP is ') + str(
         otp) + '\n\n' + 'Regards\nRohit Anand'
     connect.sendmail(str('rrohitanand3336@gmail.com'), str(email), content)
