@@ -287,7 +287,6 @@ def logged_in(request):
                 update_mb = f5.save(commit=False)
                 update_mb.mobile = int(mobile_num)
                 update_mb.save()
-                f5.save_m2m()
                 return render(request, 'profiles.html', context={'edit_mode': False,
                                                                  'admin': True, 'basic': f4, 'more_detail': f5,
                                                                  'logged_user': profile, 'search': f2,

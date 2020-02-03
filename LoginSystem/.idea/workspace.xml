@@ -2,53 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d373d5a-6490-48fa-b7f7-5de044282ff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0002_auto_20200108_1048.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginPortal/migrations/0003_auto_20200108_1419.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_img/battlebreaker/IMG_20191214_085242.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_img/rrkumari/20191227_125015_0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/received/battlebreaker/imrohit/1._Introduction_to_Course__What_you_will_learn.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/received/battlebreaker/imrohit/1._Introduction_to_Course__What_you_will_learn.vtt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/received/battlebreaker/imrohit/2._XAMPP_Installation.vtt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/received/battlebreaker/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/received/imrohit/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/received/rabiswas/battlebreaker/1._Introduction_to_Course__What_you_will_learn.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/received/ssraut/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/received/vspecky/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/profiles.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/file_handling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/mail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0002_auto_20191228_1746.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0003_auto_20191228_1806.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0004_auto_20191228_1901.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0005_auto_20191228_1910.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0006_auto_20191228_1919.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0007_auto_20191228_1922.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0008_auto_20191228_2114.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/migrations/0009_auto_20191228_2120.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPortal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LoginPortal/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPortal/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_img/800705-free-download-dangerous-hd-wallpaper-smoke-skull-1920x1200-ipad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_img/IMG_20191106_155743.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_img/IMG_20191214_085242.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_img/alexander-andrews-fsH1KjbdjE8-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/change_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/change_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/profiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/profiles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/recovery.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/recovery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +150,15 @@
       <workItem from="1578538156368" duration="643000" />
       <workItem from="1578563488834" duration="803000" />
       <workItem from="1578573126646" duration="7769000" />
-      <workItem from="1578594026226" duration="7320000" />
+      <workItem from="1578594026226" duration="7920000" />
+      <workItem from="1578660311413" duration="1138000" />
+      <workItem from="1578888881773" duration="105000" />
+      <workItem from="1579794400591" duration="123000" />
+      <workItem from="1579794664449" duration="1664000" />
+      <workItem from="1579804402787" duration="46000" />
+      <workItem from="1579808517571" duration="970000" />
+      <workItem from="1579836349605" duration="29000" />
+      <workItem from="1579836810145" duration="181000" />
     </task>
     <servers />
   </component>
